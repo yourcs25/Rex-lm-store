@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf7ec">
+<title>REX STORE LM – Lords Mobile Gems, Resources & Bots</title>
+<meta name="description" content="Rex Store LM: Lords Mobile gems, resources, bots and gem calculator. Verified gaming store.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 3 56 12v20c0 14-10 24-24 29C18 56 8 46 8 32V12z' fill='%23d9a52b'/%3E%3Cpath d='M32 22l10 10-10 14-10-14z' fill='%2307080c'/%3E%3C/svg%3E">
+<script>try{var m=localStorage.getItem('rlm-theme')||'day';document.documentElement.dataset.theme=m}catch(e){}</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600..800&family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--bg:#fbf7ec;--s1:#fff;--s2:#f6efdc;--line:#e4d8b6;--gold:#9a6b0c;--g1:#e9c24f;--g2:#b8821a;--ink:#241a0a;--mut:#6a5d45;--hh:60px;color-scheme:light}
+[data-theme=night]{--bg:#07080c;--s1:#0f121a;--s2:#161a24;--line:#272c3a;--gold:#e2b94f;--g1:#f6dd8e;--g2:#bd8a2d;--ink:#f1efe8;--mut:#9aa0ad;color-scheme:dark}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 Inter,system-ui,sans-serif;padding-bottom:40px}
+h1,h2,h3,.brand{font-family:Cinzel,Georgia,serif;margin:0}
+button,input,textarea,select{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.top{position:sticky;top:0;z-index:50;padding-top:env(safe-area-inset-top,0);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:760px;margin:0 auto;height:var(--hh);padding:0 12px;display:flex;align-items:center;gap:10px}
+.top svg.lg,.top img.lg-img{width:38px;height:38px;object-fit:contain;flex:none;border-radius:8px}
+.brand{font-size:1.05rem;font-weight:800;letter-spacing:.5px;margin-right:auto;background:linear-gradient(180deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.ib{position:relative;width:42px;height:42px;display:grid;place-items:center;border-radius:14px;border:1px solid var(--line);background:var(--s1);font-size:1.15rem;padding:0}
+.ib.g{background:linear-gradient(180deg,var(--g1),var(--g2));border:0;color:#1a1204}
+.bdg{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;border-radius:10px;background:#1a1204;color:var(--g1);border:1px solid var(--g1);font:700 .68rem/18px Inter;text-align:center;padding:0 4px}
+
+.hero{text-align:center;padding:22px 0 10px}
+.hero-logo-box{display:flex;justify-content:center;align-items:center;margin-bottom:8px}
+.hero img.custom-logo{max-width:110px;max-height:110px;object-fit:contain;filter:drop-shadow(0 6px 16px rgba(201,151,43,.35))}
+.hero svg{width:100px;height:100px;filter:drop-shadow(0 6px 18px rgba(201,151,43,.4))}
+.hero h1{font-size:1.8rem;margin:4px 0 2px;background:linear-gradient(180deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero small{letter-spacing:.2em;font-size:.72rem;font-weight:800;color:var(--gold)}
+
+.home-banner{background:linear-gradient(135deg,rgba(233,194,79,.12),rgba(184,130,26,.05));border:1px solid var(--line);border-radius:20px;padding:20px;text-align:center;margin-bottom:16px}
+.home-banner h2{font-size:1.4rem;color:var(--gold);margin-bottom:6px}
+.home-banner p{font-size:.9rem;color:var(--mut);margin:0 0 14px}
+
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:16px}
+.stat-card{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:14px 12px;text-align:center}
+.stat-card .val{font-size:1.4rem;font-weight:800;color:var(--gold);font-family:Cinzel,serif}
+.stat-card .lbl{font-size:.78rem;font-weight:700;color:var(--mut);margin-top:2px}
+
+.trust-features{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
+.tf-card{background:var(--s2);border:1px solid var(--line);border-radius:14px;padding:10px 8px;text-align:center}
+.tf-card .ico{font-size:1.3rem;margin-bottom:2px}
+.tf-card .t{font-size:.75rem;font-weight:700;color:var(--ink)}
+
+.tabs-wrap{position:sticky;top:calc(var(--hh) + env(safe-area-inset-top,0));z-index:40;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:10px 16px}
+.tabs{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;max-width:760px;margin:0 auto}
+.tabs button{border:1px solid var(--line);background:var(--s1);border-radius:999px;padding:7px 14px;font-weight:700;font-size:.85rem;white-space:nowrap;transition:all .15s}
+.tabs button.on{background:linear-gradient(180deg,var(--g1),var(--g2));color:#1a1204;border-color:transparent;box-shadow:0 3px 10px rgba(226,185,79,.3)}
+
+.tab-section{display:none;padding:20px 0 4px}
+.tab-section.active-section{display:block}
+.tab-section>h2{font-size:1.3rem;margin-bottom:4px}
+.sub{color:var(--mut);margin:0 0 14px;font-size:.9rem}
+
+.card{background:var(--s1);border:1px solid var(--line);border-radius:20px;padding:16px;margin-bottom:12px}
+.pill{display:inline-flex;gap:6px;align-items:center;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--s2);font-size:.8rem;font-weight:700;margin-bottom:12px}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:10px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.row b{font-size:.95rem}.row small{display:block;color:var(--mut)}
+.price{font-weight:800;color:var(--gold);font-size:1.05rem;text-align:right}
+
+.btn{border:0;border-radius:12px;padding:10px 16px;font-weight:800;background:linear-gradient(180deg,var(--g1),var(--g2));color:#1a1204;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.btn.w{width:100%;padding:13px}
+.btn.o{background:var(--s2);color:var(--ink);border:1px solid var(--line)}
+.btn.danger{background:#dc2626;color:#fff}
+.btn.wa{background:#25d366;color:#fff}.btn.tg{background:#0088cc;color:#fff}.btn.dc{background:#5865f2;color:#fff}
+
+.grid{display:grid;gap:12px}
+.pk .ico{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem;background:var(--s2);border:1px solid var(--line);margin-bottom:8px}
+.pk h3{font-size:1.05rem}.pk p{color:var(--mut);margin:4px 0 10px;font-size:.88rem}
+.pk .pr{font-size:1.4rem;font-weight:800;margin-bottom:12px}
+.badge{display:inline-block;font-size:.72rem;font-weight:800;padding:3px 8px;border-radius:6px;background:rgba(34,158,217,.14);color:#1b8bc2;margin-bottom:6px}
+
+.calc-container{background:#1d182b;border:1px solid #3c3258;border-radius:18px;overflow:hidden;color:#e8e4f5;margin-bottom:16px}
+.calc-header{background:#2b2242;padding:12px 16px;font-weight:800;font-size:1.1rem;color:#f3e8ff;border-bottom:1px solid #3c3258;display:flex;align-items:center;justify-content:space-between}
+.calc-subtabs{display:flex;background:#151120;border-bottom:1px solid #3c3258;overflow-x:auto;scrollbar-width:none}
+.calc-subtabs::-webkit-scrollbar{display:none}
+.calc-subtabs button{flex:none;padding:10px 14px;font-size:.82rem;font-weight:700;color:#a89ec4;border:0;background:transparent;border-right:1px solid #28213b;white-space:nowrap}
+.calc-subtabs button.active{background:#63469e;color:#fff}
+
+.calc-table{width:100%;border-collapse:collapse;font-size:.86rem}
+.calc-table th{background:#231a38;color:#bcaedc;padding:9px 10px;text-align:left;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid #3c3258}
+.calc-table td{padding:8px 10px;border-bottom:1px solid #2b2342;vertical-align:middle}
+.calc-table tr:last-child td{border-bottom:0}
+.calc-item-icon{width:30px;height:30px;object-fit:contain;border-radius:6px;vertical-align:middle;margin-right:6px;background:#2b2242;padding:2px;border:1px solid #4a3b70}
+.calc-qty-input{width:65px;background:#0d0a14;border:1px solid #4a3b70;color:#fff;border-radius:8px;padding:6px 8px;font-weight:700;text-align:center;font-size:.9rem}
+
+.wishlist-box{background:#2b1d47;border-top:2px solid #7c52ca;padding:14px;text-align:center}
+.wishlist-box h3{color:#f3e8ff;font-size:1rem;margin-bottom:6px}
+.wishlist-total{font-size:1.5rem;font-weight:800;color:#f6dd8e;font-family:Cinzel,serif}
+.wishlist-price{font-size:.95rem;color:#d3c5f5;margin-top:2px}
+
+.inst-card{background:linear-gradient(135deg,rgba(37,211,102,.1),rgba(34,158,217,.06));border:1px solid rgba(37,211,102,.3);border-radius:16px;padding:16px;margin-bottom:16px}
+.inst-card h3{font-size:1.05rem;color:var(--ink);margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.inst-step{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;font-size:.88rem}
+.inst-step:last-child{margin-bottom:0}
+.inst-num{width:22px;height:22px;border-radius:11px;background:#1fae5b;color:#fff;font-size:.75rem;font-weight:800;display:grid;place-items:center;flex:none}
+
+.field{display:block;width:100%;min-height:46px;padding:0 12px;border-radius:12px;border:1px solid var(--line);background:var(--s2);color:var(--ink);font:500 .92rem Inter}
+.mono{font:600 .9rem ui-monospace,Menlo,monospace;word-break:break-all}
+.lbl{font-size:.72rem;font-weight:800;letter-spacing:.08em;color:var(--mut);text-transform:uppercase;margin-bottom:4px}
+.box{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px;border:1px dashed var(--line);border-radius:14px;background:var(--s2);margin-top:10px}
+.qr{display:grid;place-items:center;padding:12px;background:#fff;border-radius:16px;width:max-content;margin:6px auto 12px}
+.ct{text-align:center}.ct .ico{font-size:2rem}.ct h3{margin:4px 0}.ct p{color:var(--mut);margin:0 0 12px;font-family:ui-monospace,Menlo,monospace;font-size:.85rem}
+
+.admin-subtabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:10px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.admin-subtabs button{padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--s2);font-size:.8rem;font-weight:700;white-space:nowrap}
+.admin-subtabs button.active{background:linear-gradient(180deg,var(--g1),var(--g2));color:#1a1204;border-color:transparent}
+.admin-panel{background:var(--s1);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:16px}
+.admin-panel h3{font-size:1.1rem;margin-bottom:12px}
+.edit-item-row{background:var(--s2);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:8px}
+
+.bd{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.6);opacity:0;visibility:hidden;transition:.25s}
+.bd.on{opacity:1;visibility:visible}
+.sheet{position:fixed;z-index:62;left:0;right:0;bottom:0;max-height:90dvh;display:flex;flex-direction:column;background:var(--bg);border:1px solid var(--line);border-radius:24px 24px 0 0;transform:translateY(105%);transition:transform .28s;max-width:760px;margin:0 auto}
+.sheet.on{transform:none}
+.sh{display:flex;align-items:center;justify-content:space-between;padding:16px 16px 8px}
+.sb{overflow:auto;padding:4px 16px 8px}
+.sf{padding:12px 16px calc(14px + env(safe-area-inset-bottom,0));border-top:1px solid var(--line)}
+.ln{display:grid;grid-template-columns:1fr auto;gap:4px 10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.ln small{color:var(--mut)}
+.st{display:inline-flex;align-items:center;gap:6px}
+.st button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--s1);font-weight:800}
+.tot{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:1.15rem;margin-bottom:10px}
+.tot span:last-child{color:var(--gold);font-family:Cinzel,serif;font-size:1.4rem}
+.three-btn-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px}
+
+.toast{position:fixed;left:50%;top:calc(76px + env(safe-area-inset-top,0));transform:translate(-50%,-14px);z-index:90;background:#1a1204;color:var(--g1);border:1px solid var(--g1);padding:10px 16px;border-radius:12px;font-weight:700;font-size:.88rem;opacity:0;pointer-events:none;transition:.25s;max-width:90vw;text-align:center}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+footer{text-align:center;color:var(--mut);font-size:.8rem;padding:28px 16px 8px}
+.svg-ico{width:18px;height:18px;fill:currentColor;vertical-align:middle;flex:none}
+.cloud-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:99px;font-size:.7rem;font-weight:800;margin-left:6px}
+.cloud-badge.active{background:rgba(37,211,102,.15);color:#1fae5b;border:1px solid rgba(37,211,102,.3)}
+.cloud-badge.inactive{background:rgba(220,38,38,.12);color:#dc2626;border:1px solid rgba(220,38,38,.3)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="gg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6dd8e"/><stop offset=".55" stop-color="#e2b94f"/><stop offset="1" stop-color="#a87a1f"/></linearGradient>
+<symbol id="logo" viewBox="0 0 100 100"><path d="M50 4 88 18v32c0 22-16 38-38 46C28 88 12 72 12 50V18z" fill="#0a0b10" stroke="url(#gg)" stroke-width="4"/><path d="M26 40 32 22l10 10 8-14 8 14 10-10 6 18z" fill="url(#gg)"/><rect x="26" y="42" width="48" height="5" rx="2" fill="url(#gg)"/><path d="M50 54 64 68 50 86 36 68z" fill="url(#gg)"/><path d="M36 68h28M50 54l-6 14 6 18 6-18z" stroke="#0a0b10" stroke-width="1.6" fill="none"/></symbol>
+</defs></svg>
+
+<header class="top"><div class="in">
+<span id="hdrLogoWrap"><svg class="lg"><use href="#logo"/></svg></span>
+<b class="brand" id="nm">REX STORE LM</b>
+<button class="ib" id="theme" aria-label="Switch day or night mode">☀️</button>
+<button class="ib g" id="cartBtn" aria-label="Open your order">🛒<i class="bdg" id="cc" hidden>0</i></button>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div class="hero-logo-box" id="heroLogoWrap"><svg><use href="#logo"/></svg></div>
+  <h1 id="nm2">REX STORE LM</h1>
+  <small id="subTagline">VERIFIED GAMING STORE</small>
+</div>
+</main>
+
+<nav class="tabs-wrap" aria-label="Sections Navigation">
+<div class="tabs" id="navTabs">
+  <button data-s="home" class="on">🏠 Home</button>
+  <button data-s="gems">💎 Gems</button>
+  <button data-s="res">📦 Resources</button>
+  <button data-s="bots">🤖 Bots</button>
+  <button data-s="pay">💳 Payment</button>
+  <button data-s="contact">🎧 Contact</button>
+  <button data-s="admin">⚙️ Admin</button>
+</div>
+</nav>
+
+<div class="wrap">
+
+<!-- 🏠 HOME SECTION -->
+<section id="sec-home" class="tab-section active-section">
+  <div class="home-banner">
+    <h2 id="hmBannerTitle">WELCOME TO REX STORE LM</h2>
+    <p id="hmBannerSub">Your #1 trusted portal for Lords Mobile Gems, Resources & Guild Bots</p>
+    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+      <button class="btn" onclick="switchSection('gems')">💎 Gem Calculator</button>
+      <button class="btn o" onclick="switchSection('res')">📦 Buy Supplies</button>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="val" id="stClients">1,500+</div>
+      <div class="lbl">👥 Active Clients</div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="stRepeat">89%</div>
+      <div class="lbl">🔄 Repeat Buyers</div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="stOrders">5,200+</div>
+      <div class="lbl">⚡ Orders Delivered</div>
+    </div>
+    <div class="stat-card">
+      <div class="val" id="stRating">4.9 / 5</div>
+      <div class="lbl">⭐ Store Rating</div>
+    </div>
+  </div>
+
+  <div class="trust-features">
+    <div class="tf-card"><div class="ico">⚡</div><div class="t">Instant Delivery</div></div>
+    <div class="tf-card"><div class="ico">🛡️</div><div class="t">Fast Guild Gift</div></div>
+    <div class="tf-card"><div class="ico">🎧</div><div class="t">24/7 Support</div></div>
+  </div>
+
+  <div class="card">
+    <span class="pill">🔥 Quick Services</span>
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:10px">
+      <button class="btn o" style="padding:14px;flex-direction:column" onclick="switchSection('gems')">
+        <span style="font-size:1.4rem">💎</span>
+        <span>Gems & Calc</span>
+      </button>
+      <button class="btn o" style="padding:14px;flex-direction:column" onclick="switchSection('res')">
+        <span style="font-size:1.4rem">📦</span>
+        <span>Resources</span>
+      </button>
+      <button class="btn o" style="padding:14px;flex-direction:column" onclick="switchSection('bots')">
+        <span style="font-size:1.4rem">🤖</span>
+        <span>Guild Bots</span>
+      </button>
+      <button class="btn o" style="padding:14px;flex-direction:column" onclick="switchSection('pay')">
+        <span style="font-size:1.4rem">💳</span>
+        <span>Payment QR</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 💎 GEMS SECTION -->
+<section id="sec-gems" class="tab-section">
+<h2>Gems & Calculator</h2>
+<p class="sub">Calculate item costs or buy direct gem packages</p>
+
+<div class="calc-container">
+  <div class="calc-header">
+    <span>💎 Gem Calculator</span>
+    <button class="btn o" style="padding:4px 10px;font-size:.75rem" onclick="resetCalc()">Reset Qty</button>
+  </div>
+  <div class="calc-subtabs" id="calcSubTabs"></div>
+  <table class="calc-table">
+    <thead>
+      <tr>
+        <th>Item Name</th>
+        <th style="text-align:center">Gem</th>
+        <th style="text-align:center">Quantity</th>
+      </tr>
+    </thead>
+    <tbody id="calcRows"></tbody>
+  </table>
+  <div class="wishlist-box">
+    <h3>My Wishlist Total</h3>
+    <div class="wishlist-total" id="wishGems">0 Gems</div>
+    <div class="wishlist-price" id="wishPrice">Approx: $0.00</div>
+    <button class="btn w" style="margin-top:10px" onclick="addCalcToCart()">Add Calculated Gems to Cart</button>
+  </div>
+</div>
+
+<div class="inst-card">
+  <h3><span>📩</span> How to receive gems -</h3>
+  <div class="inst-step">
+    <div class="inst-num">1</div>
+    <div><b>Join open guild</b></div>
+  </div>
+  <div class="inst-step">
+    <div class="inst-num">2</div>
+    <div><b>Send screenshot of your guild tag and name</b></div>
+  </div>
+  <div class="inst-step">
+    <div class="inst-num">3</div>
+    <div><b>Gems received hone ke baad guild leave kar sakte ho</b></div>
+  </div>
+</div>
+
+<div class="card">
+  <span class="pill">🛡️ Fast Guild Gift Delivery</span>
+  <h3 style="margin-bottom:10px;font-size:1.1rem">Gems Rates (per 100k)</h3>
+  <div id="gemRows"></div>
+</div>
+</section>
+
+<!-- 📦 RESOURCES SECTION -->
+<section id="sec-res" class="tab-section">
+<h2>Resources</h2>
+<p class="sub">Ready resource packages</p>
+<div class="grid" id="resList"></div>
+</section>
+
+<!-- 🤖 BOTS SECTION -->
+<section id="sec-bots" class="tab-section">
+<h2>Bots</h2>
+<p class="sub">Automated bank, farm and guild bots</p>
+<div class="grid" id="botList"></div>
+</section>
+
+<div id="customSectionsWrapper"></div>
+
+<!-- 💳 PAYMENT SECTION -->
+<section id="sec-pay" class="tab-section">
+<h2>Payment Methods</h2>
+<p class="sub">Pay your order total with any method, then confirm on chat.</p>
+<div class="card"><span class="pill">UPI · India</span><h3>UPI Payment</h3>
+<div class="qr"><div id="qrBox">
+  <svg width="150" height="150" viewBox="0 0 100 100" style="background:#fff;padding:6px;border-radius:12px">
+    <rect width="100" height="100" fill="#fff"/>
+    <path d="M10 10h30v30H10zm6 6v18h18V16zm6 6h6v6h-6zM60 10h30v30H60zm6 6v18h18V16zm6 6h6v6h-6zM10 60h30v30H10zm6 6v18h18V66zm6 6h6v6h-6zM50 50h10v10H50zm10 10h10v10H60zm10-10h10v10H70zm10 10h10v10H80zm-20 20h10v10H60zm20 0h10v10H80z" fill="#000"/>
+  </svg>
+</div></div><div class="lbl" style="text-align:center">Scan QR Code</div>
+<div class="box"><span class="mono" id="upiId"></span><button class="btn o" data-copy="upi">Copy</button></div></div>
+<div class="card"><span class="pill">🌍 Global Remit</span><h3>Remitly Bank</h3>
+<div class="box" style="display:block"><div class="lbl">Recipient name</div><b id="rmName"></b><div class="lbl" style="margin-top:10px">Payout details</div><span class="mono" id="rmDet"></span></div></div>
+<div class="card"><span class="pill">USDT Crypto</span><h3>Binance / Crypto</h3>
+<div class="box"><div><div class="lbl">Binance Pay ID</div><span class="mono" id="bnId"></span></div><button class="btn o" data-copy="bn">Copy</button></div>
+<div class="box"><div><div class="lbl">USDT address (TRC20)</div><span class="mono" id="usdt"></span></div><button class="btn o" data-copy="usdt">Copy</button></div></div>
+</section>
+
+<!-- 🎧 CONTACT SECTION -->
+<section id="sec-contact" class="tab-section">
+<h2>Connect With Us</h2>
+<p class="sub">24/7 support channels</p>
+<div class="grid">
+<div class="card ct">
+  <div class="ico">
+    <svg class="svg-ico" style="width:36px;height:36px;color:#5865f2" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+  </div>
+  <h3>Discord</h3>
+  <p id="dcTag"></p>
+  <a class="btn dc w" id="dcBtn" target="_blank" rel="noopener" style="display:inline-flex;text-decoration:none">Join Discord Server</a>
+</div>
+
+<div class="card ct">
+  <div class="ico">
+    <svg class="svg-ico" style="width:36px;height:36px;color:#0088cc" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.16l-1.97 9.28c-.15.65-.53.81-1.08.5l-3.01-2.22-1.45 1.4c-.16.16-.3.3-.61.3l.21-3.05 5.56-5.02c.24-.22-.05-.34-.37-.13l-6.87 4.33-2.96-.92c-.64-.2-.65-.64.13-.95l11.57-4.46c.53-.2 1 .13.85.94z"/></svg>
+  </div>
+  <h3>Telegram</h3>
+  <p id="tgTag"></p>
+  <a class="btn tg w" id="tgBtn" target="_blank" rel="noopener" style="display:inline-flex;text-decoration:none">Message Telegram</a>
+</div>
+
+<div class="card ct">
+  <div class="ico">
+    <svg class="svg-ico" style="width:36px;height:36px;color:#25d366" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </div>
+  <h3>WhatsApp</h3>
+  <p id="waTag"></p>
+  <a class="btn wa w" id="waBtn" target="_blank" rel="noopener" style="display:inline-flex;text-decoration:none">Chat WhatsApp</a>
+</div>
+</div>
+</section>
+
+<!-- ⚙️ ADMIN SECTION -->
+<section id="sec-admin" class="tab-section">
+<h2>Web Owner / Admin Console</h2>
+<p class="sub">Manage store details, home page, calculator items, and cloud sync</p>
+
+<div id="adminAuthLock" class="card" style="text-align:center;padding:24px">
+  <div style="font-size:2.2rem;margin-bottom:8px">🔒</div>
+  <h3>Admin Password Protected</h3>
+  <p class="sub" style="margin-bottom:12px">Enter the store admin password to open settings console.</p>
+  <input type="password" id="adminPassInput" class="field" placeholder="Enter admin password" style="text-align:center;margin-bottom:12px">
+  <button class="btn w" id="adminAuthBtn">Unlock Admin Console</button>
+  <p id="adminErr" style="color:#dc2626;font-size:.82rem;font-weight:700;margin-top:8px;display:none">Incorrect Password!</p>
+</div>
+
+<div id="adminContent" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+    <div style="display:flex;align-items:center">
+      <span class="pill" style="margin:0">👑 Owner Mode</span>
+      <span id="cloudStatusBadge" class="cloud-badge inactive">⚪ Local Mode</span>
+    </div>
+    <button class="btn o" style="padding:4px 10px;font-size:.8rem" id="lockAdminBtn">🔒 Lock Admin</button>
+  </div>
+
+  <div class="admin-subtabs" id="adminSubTabs">
+    <button data-at="hm" class="active">🏠 Home Page</button>
+    <button data-at="cloud">☁️ Cloud Sync</button>
+    <button data-at="gems">💎 Gems & Calc</button>
+    <button data-at="res">📦 Resources</button>
+    <button data-at="bots">🤖 Bots</button>
+    <button data-at="cust">✨ Custom Tabs</button>
+    <button data-at="pay">💳 Payment & Info</button>
+  </div>
+
+  <div id="at-hm" class="admin-panel">
+    <h3>🏠 Home Page & Client Stats Manager</h3>
+    <label class="lbl">Home Banner Title</label>
+    <input class="field" id="edHmTitle" style="margin-bottom:8px">
+    <label class="lbl">Home Banner Subtitle</label>
+    <input class="field" id="edHmSub" style="margin-bottom:12px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <div><label class="lbl">Active Clients Count</label><input class="field" id="edStClients"></div>
+      <div><label class="lbl">Repeat Buyers Rate</label><input class="field" id="edStRepeat"></div>
+      <div><label class="lbl">Orders Delivered</label><input class="field" id="edStOrders"></div>
+      <div><label class="lbl">Store Rating</label><input class="field" id="edStRating"></div>
+    </div>
+    <button class="btn w" style="margin-top:14px" id="saveHmBtn">Save Home Settings</button>
+  </div>
+
+  <div id="at-cloud" class="admin-panel" style="display:none">
+    <h3>☁️ Firebase Realtime Cloud Sync</h3>
+    <p class="sub">Connect your free Firebase Realtime Database so that any price or text change you make in Admin auto-saves live for ALL customers!</p>
+    <div class="inst-card" style="background:var(--s2);border-color:var(--line)">
+      <b>How to setup in 1 minute (Free):</b>
+      <div style="font-size:.82rem;margin-top:4px">
+        1. Go to <a href="https://console.firebase.google.com" target="_blank" style="color:var(--gold);text-decoration:underline">firebase.google.com</a> & create a free project.<br>
+        2. Create a <b>Realtime Database</b> in Test Mode.<br>
+        3. Copy your Database URL (e.g. <code>https://rex-store-default-rtdb.firebaseio.com</code>) & paste below.
+      </div>
+    </div>
+    <label class="lbl">Firebase Realtime Database URL</label>
+    <input class="field" id="edFirebaseUrl" placeholder="https://your-project-id.firebaseio.com" style="margin-bottom:12px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+      <button class="btn w" id="saveCloudBtn">Save Cloud URL</button>
+      <button class="btn w o" id="pushCloudBtn">Sync Local Data -> Cloud</button>
+    </div>
+  </div>
+
+  <div id="at-gems" class="admin-panel" style="display:none">
+    <h3>💎 Gems Rate & Gem Calculator Items</h3>
+    <div style="margin-bottom:16px">
+      <label class="lbl">Gems USD Rate per 100k (for Calculator)</label>
+      <input class="field" id="edGemCalcRate" type="number" step="0.01" style="margin-bottom:8px">
+      <button class="btn w" id="saveCalcRateBtn">Save Gem Rate</button>
+    </div>
+    <hr style="border:0;border-top:1px solid var(--line);margin:12px 0">
+    <h4 style="margin:0 0 8px">Gem Calculator Items List</h4>
+    <div id="adminCalcItemsList"></div>
+    <button class="btn o w" style="margin-top:8px" id="addCalcItemBtn">+ Add New Calculator Item</button>
+
+    <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+    <h4 style="margin:0 0 8px">Might Brackets Rates List</h4>
+    <div id="adminGemsList"></div>
+    <button class="btn o w" style="margin-top:8px" id="addGemTierBtn">+ Add Gem Might Bracket</button>
+  </div>
+
+  <div id="at-res" class="admin-panel" style="display:none">
+    <h3>📦 Resources Packages Manager</h3>
+    <div id="adminResList"></div>
+    <button class="btn o w" style="margin-top:10px" id="addResBtn">+ Add New Resource Package</button>
+  </div>
+
+  <div id="at-bots" class="admin-panel" style="display:none">
+    <h3>🤖 Guild & Farm Bots Manager</h3>
+    <div id="adminBotList"></div>
+    <button class="btn o w" style="margin-top:10px" id="addBotBtn">+ Add New Bot Plan</button>
+  </div>
+
+  <div id="at-cust" class="admin-panel" style="display:none">
+    <h3>✨ Custom Sections Manager</h3>
+    <p class="sub">Create new categories like Accounts, Speedups, etc.</p>
+    <div id="adminCustList"></div>
+    <button class="btn o w" style="margin-top:10px" id="addCustSecBtn">+ Create New Custom Section</button>
+  </div>
+
+  <div id="at-pay" class="admin-panel" style="display:none">
+    <h3>💳 Store Details & Gallery Logo</h3>
+    
+    <div style="margin-bottom:14px">
+      <label class="lbl">Custom Store Logo (Upload from Phone Gallery)</label>
+      <div style="display:flex;gap:8px;align-items:center">
+        <input type="file" id="logoFileInput" accept="image/*" style="display:none">
+        <button class="btn o" id="triggerLogoUpload">Upload Logo from Gallery</button>
+        <button class="btn o danger" id="removeLogoBtn">Remove Logo</button>
+      </div>
+      <small style="color:var(--mut);display:block;margin-top:4px">Appears above REX STORE LM in hero & header.</small>
+    </div>
+
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+      <div><label class="lbl">Store Title</label><input class="field" id="edName"></div>
+      <div><label class="lbl">UPI ID</label><input class="field" id="edUpi"></div>
+      <div><label class="lbl">UPI Payee Name</label><input class="field" id="edUpiName"></div>
+      <div><label class="lbl">Binance Pay ID</label><input class="field" id="edBn"></div>
+      <div><label class="lbl">USDT TRC20 Address</label><input class="field" id="edUsdt"></div>
+      <div><label class="lbl">WhatsApp (+CountryCode)</label><input class="field" id="edWa"></div>
+      <div><label class="lbl">Telegram Username</label><input class="field" id="edTg"></div>
+      <div><label class="lbl">Discord Server URL</label><input class="field" id="edDc"></div>
+    </div>
+    <label class="lbl">Remitly Name</label><input class="field" id="edRmName" style="margin-bottom:8px">
+    <label class="lbl">Remitly Details</label><input class="field" id="edRmDet" style="margin-bottom:12px">
+    <button class="btn w" id="savePayBtn">Save Store Details</button>
+  </div>
+</div>
+</section>
+
+<footer id="ft"></footer>
+</div>
+
+<div class="bd" id="bd"></div>
+<div class="sheet" id="sheet" role="dialog" aria-label="Your order">
+<div class="sh"><h3>Your Order Cart</h3><button class="ib" id="closeCart" aria-label="Close">✕</button></div>
+<div class="sb">
+  <div id="lines"></div>
+  
+  <div style="margin-top:14px;background:var(--s2);padding:12px;border-radius:14px;border:1px solid var(--line)">
+    <label class="lbl" for="usrPlayerName">Player Name *</label>
+    <input class="field" id="usrPlayerName" placeholder="Exact Lords Mobile player name" style="margin-bottom:8px">
+    
+    <label class="lbl" for="usrGuildTag">Guild Tag *</label>
+    <input class="field" id="usrGuildTag" placeholder="e.g. [XYZ] or Guild Tag" style="margin-bottom:8px">
+    
+    <label class="lbl" for="usrLocation">Location / Coordinates (For Resources)</label>
+    <input class="field" id="usrLocation" placeholder="Kingdom & Coordinates e.g. K:123 X:456 Y:789">
+  </div>
+</div>
+<div class="sf">
+  <div class="tot"><span>Total</span><span id="total">$0.00</span></div>
+  <button class="btn w o" id="goPay" style="margin-bottom:8px">See payment methods</button>
+  <div class="three-btn-grid">
+    <button class="btn wa" id="paidWa">
+      <svg class="svg-ico" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      <span>WhatsApp</span>
+    </button>
+    <button class="btn tg" id="paidTg">
+      <svg class="svg-ico" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.16l-1.97 9.28c-.15.65-.53.81-1.08.5l-3.01-2.22-1.45 1.4c-.16.16-.3.3-.61.3l.21-3.05 5.56-5.02c.24-.22-.05-.34-.37-.13l-6.87 4.33-2.96-.92c-.64-.2-.65-.64.13-.95l11.57-4.46c.53-.2 1 .13.85.94z"/></svg>
+      <span>Telegram</span>
+    </button>
+    <button class="btn dc" id="paidDc">
+      <svg class="svg-ico" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+      <span>Discord</span>
+    </button>
+  </div>
+</div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const DEFAULT_CFG={
+ name:'REX STORE LM', logo:'',
+ homeTitle:'WELCOME TO REX STORE LM', homeSub:'Your #1 trusted portal for Lords Mobile Gems, Resources & Guild Bots',
+ stClients:'1,500+', stRepeat:'89%', stOrders:'5,200+', stRating:'4.9 / 5',
+ firebaseUrl:'',
+ upi:'8826797382@upi', upiName:'Rex Store LM',
+ remitlyName:'REX STORE OFFICIAL', remitlyDetails:'+91 88267 97382 (Bank details on chat)',
+ binanceId:'000000000', usdt:'YOUR_USDT_TRC20_ADDRESS',
+ whatsapp:'918826797382', telegram:'RexLMStore',
+ discordUrl:'https://discord.gg/yourinvite', discordTag:'@RexStoreAdmin'
+};
+
+const DEFAULT_GEMS_RATE = 4.00;
+
+const DEFAULT_CALC_ITEMS = [
+ {id:'c1', cat:'speed', name:'Speed 60 minutes', gem:130, img:''},
+ {id:'c2', cat:'speed', name:'Speed 3 Hours', gem:300, img:''},
+ {id:'c3', cat:'speed', name:'Speed 8 Hours', gem:650, img:''},
+ {id:'c4', cat:'speed', name:'Speed 15 Hours', gem:1000, img:''},
+ {id:'c5', cat:'speed', name:'Speed 24 Hours', gem:1500, img:''},
+ {id:'c6', cat:'speed', name:'Speed 3 Days', gem:4400, img:''},
+ {id:'c7', cat:'speed', name:'Speed 7 Days', gem:10000, img:''},
+ {id:'c8', cat:'speed', name:'Speed 30 Days', gem:40000, img:''},
+ {id:'c9', cat:'combat', name:'Shield 8 Hours', gem:500, img:''},
+ {id:'c10', cat:'combat', name:'Shield 24 Hours', gem:1000, img:''},
+ {id:'c11', cat:'combat', name:'Shield 3 Days', gem:2500, img:''},
+ {id:'c12', cat:'combat', name:'Shield 7 Days', gem:10000, img:''},
+ {id:'c13', cat:'boost', name:'ATK Boost 20% (24h)', gem:1500, img:''},
+ {id:'c14', cat:'boost', name:'DEF Boost 20% (24h)', gem:1500, img:''},
+ {id:'c15', cat:'res', name:'Food 10,000,000', gem:1500, img:''},
+ {id:'c16', cat:'res', name:'Gold 2,000,000', gem:2000, img:''},
+ {id:'c17', cat:'chests', name:'Monster Chest x10', gem:3000, img:''},
+ {id:'c18', cat:'build', name:'War Tome x100', gem:10000, img:''},
+ {id:'c19', cat:'fam', name:'EXP Elixir', gem:1000, img:''},
+ {id:'c20', cat:'hunt', name:'Energy 10,000', gem:2000, img:''}
+];
+
+const DEFAULT_GEMS_MIGHT=[
+ ['0 - 500m Might',4.00],
+ ['500m - 1b Might',4.20],
+ ['1b - 1.5b Might',4.50],
+ ['1.5b - 2b Might',5.00],
+ ['2b - 2.5b Might',5.70]
+];
+
+const DEFAULT_RES=[
+ ['Resource Pack 1','Special resource package.',1.00,'Special Offer'],
+ ['Resource Pack 2','Special resource package.',0.50,'Special Offer']
+];
+
+const DEFAULT_BOTS=[
+ ['Farm bot','Automated resource harvesting bot.',1.20],
+ ['1 Month Plan','Full auto bank & shield protection bot.',15],
+ ['3 Months Plan','Discounted quarterly automated guild bot.',40],
+ ['30 help bots','Guild help and assistance bot service.',20]
+];
+
+let CFG = JSON.parse(localStorage.getItem('rlm-cfg')) || DEFAULT_CFG;
+let calcRate = parseFloat(localStorage.getItem('rlm-calc-rate')) || DEFAULT_GEMS_RATE;
+let calcItems = JSON.parse(localStorage.getItem('rlm-calc-items')) || DEFAULT_CALC_ITEMS;
+let GEMS = JSON.parse(localStorage.getItem('rlm-gems')) || DEFAULT_GEMS_MIGHT;
+let RES = JSON.parse(localStorage.getItem('rlm-res')) || DEFAULT_RES;
+let BOTS = JSON.parse(localStorage.getItem('rlm-bots')) || DEFAULT_BOTS;
+let CUST = JSON.parse(localStorage.getItem('rlm-cust')) || [];
+
+const CALC_CATS = [
+ {id:'speed', name:'Speed Ups'},
+ {id:'combat', name:'Combat'},
+ {id:'boost', name:'Boost'},
+ {id:'res', name:'Resources'},
+ {id:'chests', name:'Chests'},
+ {id:'build', name:'Buildings'},
+ {id:'fam', name:'Familiar'},
+ {id:'hunt', name:'Monster Hunt'}
+];
+
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const money=n=>'$'+n.toFixed(2);
+const cart={};
+let calcQuantities = {};
+let activeCalcCat = 'speed';
+
+function toast(m){
+ const t=$('#toast');t.textContent=m;t.classList.add('on');
+ clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),2200);
+}
+
+function saveLocal(){
+ localStorage.setItem('rlm-cfg', JSON.stringify(CFG));
+ localStorage.setItem('rlm-calc-rate', calcRate.toString());
+ localStorage.setItem('rlm-calc-items', JSON.stringify(calcItems));
+ localStorage.setItem('rlm-gems', JSON.stringify(GEMS));
+ localStorage.setItem('rlm-res', JSON.stringify(RES));
+ localStorage.setItem('rlm-bots', JSON.stringify(BOTS));
+ localStorage.setItem('rlm-cust', JSON.stringify(CUST));
+ pushToCloud();
+}
+
+function pushToCloud(){
+ if(!CFG.firebaseUrl) {
+   $('#cloudStatusBadge').className = 'cloud-badge inactive';
+   $('#cloudStatusBadge').textContent = '⚪ Local Mode';
+   return;
+ }
+ let url = CFG.firebaseUrl.replace(/\/+$/, '') + '/rex_store_data.json';
+ const payload = { CFG, calcRate, calcItems, GEMS, RES, BOTS, CUST };
+ fetch(url, {
+   method: 'PUT',
+   headers: {'Content-Type': 'application/json'},
+   body: JSON.stringify(payload)
+ }).then(r=>r.json()).then(d=>{
+   $('#cloudStatusBadge').className = 'cloud-badge active';
+   $('#cloudStatusBadge').textContent = '🟢 Cloud Live';
+ }).catch(e=>{
+   $('#cloudStatusBadge').className = 'cloud-badge inactive';
+   $('#cloudStatusBadge').textContent = '⚠️ Cloud Error';
+ });
+}
+
+function fetchFromCloud(){
+ if(!CFG.firebaseUrl) return;
+ let url = CFG.firebaseUrl.replace(/\/+$/, '') + '/rex_store_data.json';
+ fetch(url).then(r=>r.json()).then(d=>{
+   if(d && d.CFG) {
+     CFG = d.CFG; calcRate = d.calcRate || calcRate;
+     calcItems = d.calcItems || calcItems; GEMS = d.GEMS || GEMS;
+     RES = d.RES || RES; BOTS = d.BOTS || BOTS; CUST = d.CUST || CUST;
+     $('#cloudStatusBadge').className = 'cloud-badge active';
+     $('#cloudStatusBadge').textContent = '🟢 Cloud Live';
+     renderAll();
+   }
+ }).catch(e=>{});
+}
+
+function renderAll(){
+ document.title = CFG.name + ' – Lords Mobile Gems, Resources & Bots';
+ $('#nm').textContent = $('#nm2').textContent = CFG.name;
+ $('#hmBannerTitle').textContent = CFG.homeTitle || 'WELCOME TO REX STORE LM';
+ $('#hmBannerSub').textContent = CFG.homeSub || '';
+ $('#stClients').textContent = CFG.stClients || '1,500+';
+ $('#stRepeat').textContent = CFG.stRepeat || '89%';
+ $('#stOrders').textContent = CFG.stOrders || '5,200+';
+ $('#stRating').textContent = CFG.stRating || '4.9 / 5';
+ $('#ft').textContent = '© ' + new Date().getFullYear() + ' ' + CFG.name;
+
+ if(CFG.logo) {
+   $('#hdrLogoWrap').innerHTML = `<img src="${CFG.logo}" class="lg-img" alt="Logo">`;
+   $('#heroLogoWrap').innerHTML = `<img src="${CFG.logo}" class="custom-logo" alt="Logo">`;
+ } else {
+   $('#hdrLogoWrap').innerHTML = `<svg class="lg"><use href="#logo"/></svg>`;
+   $('#heroLogoWrap').innerHTML = `<svg><use href="#logo"/></svg>`;
+ }
+
+ $('#upiId').textContent = CFG.upi;
+ $('#rmName').textContent = CFG.remitlyName; $('#rmDet').textContent = CFG.remitlyDetails;
+ $('#bnId').textContent = CFG.binanceId; $('#usdt').textContent = CFG.usdt;
+ $('#dcTag').textContent = CFG.discordTag; $('#dcBtn').href = CFG.discordUrl || '#';
+ $('#tgTag').textContent = '@' + CFG.telegram; $('#tgBtn').href = 'https://t.me/' + CFG.telegram;
+ $('#waTag').textContent = '+' + CFG.whatsapp; $('#waBtn').href = 'https://wa.me/' + CFG.whatsapp;
+
+ $('#gemRows').innerHTML = GEMS.map((g,i)=>`
+   <div class="row">
+     <div><b>${g[0]}</b></div>
+     <div class="price">${money(g[1])}<small>/ 100k</small></div>
+     <button class="btn" data-add="g${i}">Order</button>
+   </div>
+ `).join('');
+
+ $('#resList').innerHTML = RES.map((r,i)=>`
+   <div class="card pk">
+     <div class="art" style="height:90px;border-radius:12px;margin-bottom:10px;background:radial-gradient(circle at 25% 30%,#2a88b5,transparent 55%),radial-gradient(circle at 75% 75%,#b82a2a,transparent 55%),#0b0d14"></div>
+     <h3>${r[0]}</h3>
+     <span class="badge">${r[3]||'Special'}</span>
+     <p>${r[1]}</p>
+     <div class="pr" style="color:var(--gold)">${money(r[2])}</div>
+     <button class="btn w" data-add="r${i}">BUY SUPPLY</button>
+   </div>
+ `).join('');
+
+ $('#botList').innerHTML = BOTS.map((b,i)=>`
+   <div class="card pk">
+     <div class="ico">🤖</div>
+     <h3>${b[0]}</h3>
+     <p>${b[1]}</p>
+     <div class="pr">${money(b[2])}</div>
+     <button class="btn w" data-add="b${i}">GET PLAN</button>
+   </div>
+ `).join('');
+
+ renderCustomSections();
+ renderCalc();
+ renderCart();
+}
+
+function renderCustomSections(){
+ const navTabs = $('#navTabs');
+ $$('#navTabs button[data-cust-id]').forEach(b=>b.remove());  $$
+('.custom-created-sec').forEach(s=>s.remove());
+
+ const wrap = $('#customSectionsWrapper');
+ wrap.innerHTML = '';
+
+ CUST.forEach((c, ci)=>{
+   const btn = document.createElement('button');
+   btn.dataset.s = 'cust_' + ci;
+   btn.dataset.custId = ci;
+   btn.textContent = (c.icon || '✨') + ' ' + c.title;
+   btn.onclick = () => switchSection('cust_' + ci);
+   navTabs.insertBefore(btn, navTabs.children[navTabs.children.length - 1]);
+
+   const sec = document.createElement('section');
+   sec.id = 'sec-cust_' + ci;
+   sec.className = 'tab-section custom-created-sec';
+   sec.innerHTML = `
+     <h2>${c.title}</h2>
+     <p class="sub">${c.sub || ''}</p>
+     <div class="grid">
+       ${(c.items||[]).map((it, ii)=>`
+         <div class="card pk">
+           <div class="ico">${c.icon || '📦'}</div>
+           <h3>${it.title}</h3>
+           <p>${it.desc || ''}</p>
+           <div class="pr" style="color:var(--gold)">${money(it.price)}</div>
+           <button class="btn w" data-add="c_${ci}_${ii}">ADD TO CART</button>
+         </div>
+       `).join('')}
+     </div>
+   `;
+   wrap.appendChild(sec);
+ });
+}
+
+function renderCalc(){
+ $('#calcSubTabs').innerHTML = CALC_CATS.map(c=>`
+   <button class="${c.id===activeCalcCat?'active':''}" onclick="switchCalcCat('${c.id}')">${c.name}</button>
+ `).join('');
+
+ const filtered = calcItems.filter(it=>it.cat===activeCalcCat);
+ $('#calcRows').innerHTML = filtered.map(it=>`
+   <tr>
+     <td>
+       ${it.img ? `<img src="${it.img}" class="calc-item-icon" alt="">` : `<span style="font-size:1.2rem;margin-right:6px">💎</span>`}
+       <b>${it.name}</b>
+     </td>
+     <td style="text-align:center;font-weight:700;color:#f6dd8e">${it.gem.toLocaleString()}</td>
+     <td style="text-align:center">
+       <input type="number" min="0" class="calc-qty-input" value="${calcQuantities[it.id]||0}" onchange="setCalcQty('${it.id}', this.value)">
+     </td>
+   </tr>
+ `).join('');
+
+ updateWishlist();
+}
+
+function switchCalcCat(cat){ activeCalcCat = cat; renderCalc(); }
+
+function setCalcQty(id, val){
+ const q = parseInt(val) || 0;
+ if(q > 0) calcQuantities[id] = q; else delete calcQuantities[id];
+ updateWishlist();
+}
+
+function resetCalc(){ calcQuantities = {}; renderCalc(); }
+
+function updateWishlist(){
+ let totalGems = 0;
+ calcItems.forEach(it=>{
+   const q = calcQuantities[it.id] || 0;
+   totalGems += it.gem * q;
+ });
+ $('#wishGems').textContent = totalGems.toLocaleString() + ' Gems';
+ const price = (totalGems / 100000) * calcRate;
+ $('#wishPrice').textContent = 'Approx Total Price: ' + money(price) + ' ($' + calcRate + ' / 100k)';
+}
+
+function addCalcToCart(){
+ let totalGems = 0;
+ calcItems.forEach(it=>{
+   const q = calcQuantities[it.id] || 0;
+   totalGems += it.gem * q;
+ });
+ if(totalGems <= 0){ toast('Select item quantities first!'); return; }
+ const price = (totalGems / 100000) * calcRate;
+ const cartId = 'calc_gems';
+ cart[cartId] = { n: 'Gems Calculator Order (' + totalGems.toLocaleString() + ' Gems)', p: price, q: 1 };
+ renderCart();
+ openCart();
+ toast('Added Calculated Gems to Cart');
+}
+
+function getItem(id){
+ if(id === 'calc_gems') return cart['calc_gems'];
+ if(id.startsWith('g')) {
+   const i = +id.slice(1);
+   return { n: 'Gems · ' + GEMS[i][0], p: GEMS[i][1], u: '× 100k gems' };
+ }
+ if(id.startsWith('r')) {
+   const i = +id.slice(1);
+   return { n: RES[i][0], p: RES[i][2], u: '' };
+ }
+ if(id.startsWith('b')) {
+   const i = +id.slice(1);
+   return { n: BOTS[i][0], p: BOTS[i][2], u: '' };
+ }
+ if(id.startsWith('c_')) {
+   const parts = id.split('_');
+   const ci = +parts[1], ii = +parts[2];
+   const item = CUST[ci].items[ii];
+   return { n: CUST[ci].title + ' · ' + item.title, p: item.price, u: '' };
+ }
+ return { n: 'Item', p: 0, u: '' };
+}
+
+function renderCart(){
+ const keys = Object.keys(cart);
+ let total = 0, count = 0;
+
+ $('#lines').innerHTML = keys.length ? keys.map(id=>{
+   const it = getItem(id);
+   const q = (typeof cart[id] === 'object') ? cart[id].q : cart[id];
+   const itemTotal = it.p * q;
+   total += itemTotal; count += q;
+
+   return `
+     <div class="ln">
+       <div>
+         <b>${it.n}</b><br>
+         <small>${money(it.p)} ${it.u||''}</small>
+       </div>
+       <div class="price">${money(itemTotal)}</div>
+       <span class="st">
+         <button data-m="${id}">−</button>
+         <b>${q}</b>
+         <button data-p="${id}">+</button>
+       </span>
+     </div>
+   `;
+ }).join('') : '<p class="sub" style="padding:16px 0;text-align:center">Your cart is empty. Add items from store.</p>';
+
+ $('#total').textContent = money(total);
+ const cc = $('#cc'); cc.hidden = !count; cc.textContent = count;
+}
+
+document.addEventListener('click', e=>{
+ const copyBtn = e.target.closest('[data-copy]');
+ if(copyBtn){
+   const v = {upi:CFG.upi, bn:CFG.binanceId, usdt:CFG.usdt}[copyBtn.dataset.copy];
+   if(navigator.clipboard){
+     navigator.clipboard.writeText(v).then(()=>toast('Copied to clipboard'), ()=>toast(v));
+   } else toast(v);
+   return;
+ }
+
+ const addBtn = e.target.closest('[data-add],[data-p],[data-m]');
+ if(!addBtn) return;
+
+ if(addBtn.dataset.add){
+   const id = addBtn.dataset.add;
+   if(id === 'calc_gems') return;
+   cart[id] = (cart[id] || 0) + 1;
+   renderCart();
+   toast('Added to Cart');
+ } else if(addBtn.dataset.p){
+   const id = addBtn.dataset.p;
+   if(typeof cart[id] === 'object') cart[id].q++;
+   else cart[id]++;
+   renderCart();
+ } else if(addBtn.dataset.m){
+   const id = addBtn.dataset.m;
+   if(typeof cart[id] === 'object') {
+     if(--cart[id].q <= 0) delete cart[id];
+   } else {
+     if(--cart[id] <= 0) delete cart[id];
+   }
+   renderCart();
+ }
+});
+
+const sheet=$('#sheet'), bd=$('#bd');
+const openCart=()=>{sheet.classList.add('on');bd.classList.add('on')};
+const closeCart=()=>{sheet.classList.remove('on');bd.classList.remove('on')};
+$('#cartBtn').onclick = openCart;
+$('#closeCart').onclick = closeCart;
+bd.onclick = closeCart;
+$('#goPay').onclick = ()=>{ closeCart(); switchSection('pay'); };
+
+function buildOrderSummary(){
+ const keys = Object.keys(cart);
+ if(!keys.length){ toast('Add items to cart first'); return null; }
+
+ const name = $('#usrPlayerName').value.trim();
+ const tag = $('#usrGuildTag').value.trim();
+ const loc = $('#usrLocation').value.trim();
+
+ if(!name || !tag){
+   toast('Please enter Player Name & Guild Tag!');
+   return null;
+ }
+
+ let total = 0;
+ const itemsText = keys.map(id=>{
+   const it = getItem(id);
+   const q = (typeof cart[id] === 'object') ? cart[id].q : cart[id];
+   const itemTotal = it.p * q;
+   total += itemTotal;
+   return `• ${it.n} x${q} = ${money(itemTotal)}`;
+ }).join('\n');
+
+ return `Hello ${CFG.name}! I would like to place an order:\n\n${itemsText}\n\nTotal Price: ${money(total)}\n\nOrder Details:\nPlayer Name: ${name}\nGuild Tag: ${tag}${loc ? '\nLocation: ' + loc : ''}`;
+}
+
+$('#paidWa').onclick = ()=>{
+ const s = buildOrderSummary();
+ if(s) window.open('https://wa.me/' + CFG.whatsapp + '?text=' + encodeURIComponent(s), '_blank');
+};
+
+$('#paidTg').onclick = ()=>{
+ const s = buildOrderSummary();
+ if(!s) return;
+ if(navigator.clipboard) navigator.clipboard.writeText(s);
+ toast('Order details copied! Paste in Telegram chat.');
+ window.open('https://t.me/' + CFG.telegram, '_blank');
+};
+
+$('#paidDc').onclick = ()=>{
+ const s = buildOrderSummary();
+ if(!s) return;
+ if(navigator.clipboard) navigator.clipboard.writeText(s);
+ toast('Order details copied! Paste in Discord server.');
+ window.open(CFG.discordUrl || '#', '_blank');
+};
+
+function switchSection(secId){
+ $$('#navTabs button').forEach(b=>{    b.classList.toggle('on', b.dataset.s === secId);  });  $$
+('.tab-section').forEach(s=>{
+   s.classList.remove('active-section');
+ });
+ const target = $('#sec-' + secId);  if(target) target.classList.add('active-section');  window.scrollTo({top:0, behavior:'smooth'}); }  $$('#navTabs button').forEach(b=>{
+ if(!b.dataset.custId) {
+   b.onclick = () => switchSection(b.dataset.s);
+ }
+});
+
+$('#adminAuthBtn').onclick = ()=>{
+ const pass = $('#adminPassInput').value;
+ if(pass === 'raju@2002') {
+   $('#adminAuthLock').style.display = 'none';
+   $('#adminContent').style.display = 'block';
+   $('#adminErr').style.display = 'none';
+   loadAdminFields();
+ } else {
+   $('#adminErr').style.display = 'block';
+ }
+};
+
+$('#lockAdminBtn').onclick = ()=>{
+ $('#adminContent').style.display = 'none';
+ $('#adminAuthLock').style.display = 'block';
+ $('#adminPassInput').value = ''; };  $$('#adminSubTabs button').forEach(btn=>{  btn.onclick = ()=>{    $$('#adminSubTabs button').forEach(b=>b.classList.remove('active'));    btn.classList.add('active');    const target = btn.dataset.at;    $$('.admin-panel').forEach(p=>p.style.display='none');$('#at-' + target).style.display = 'block';
+ };
+});
+
+function loadAdminFields(){
+ $('#edHmTitle').value = CFG.homeTitle || '';
+ $('#edHmSub').value = CFG.homeSub || '';
+ $('#edStClients').value = CFG.stClients || '';
+ $('#edStRepeat').value = CFG.stRepeat || '';
+ $('#edStOrders').value = CFG.stOrders || '';
+ $('#edStRating').value = CFG.stRating || '';
+
+ $('#edFirebaseUrl').value = CFG.firebaseUrl || '';
+ $('#edGemCalcRate').value = calcRate;
+
+ $('#edName').value = CFG.name; $('#edUpi').value = CFG.upi; $('#edUpiName').value = CFG.upiName;
+ $('#edBn').value = CFG.binanceId; $('#edUsdt').value = CFG.usdt;
+ $('#edWa').value = CFG.whatsapp; $('#edTg').value = CFG.telegram; $('#edDc').value = CFG.discordUrl;
+ $('#edRmName').value = CFG.remitlyName; $('#edRmDet').value = CFG.remitlyDetails;
+
+ renderAdminCalcItems();
+ renderAdminGems();
+ renderAdminRes();
+ renderAdminBots();
+ renderAdminCust();
+}
+
+$('#saveHmBtn').onclick = ()=>{
+ CFG.homeTitle = $('#edHmTitle').value.trim();
+ CFG.homeSub = $('#edHmSub').value.trim();
+ CFG.stClients = $('#edStClients').value.trim();
+ CFG.stRepeat = $('#edStRepeat').value.trim();
+ CFG.stOrders = $('#edStOrders').value.trim();
+ CFG.stRating = $('#edStRating').value.trim();
+ saveLocal(); renderAll(); toast('Home Settings Saved!');
+};
+
+$('#saveCloudBtn').onclick = ()=>{
+ CFG.firebaseUrl = $('#edFirebaseUrl').value.trim();
+ saveLocal(); renderAll(); fetchFromCloud(); toast('Cloud URL Saved & Connecting...');
+};
+
+$('#pushCloudBtn').onclick = ()=>{
+ pushToCloud(); toast('Syncing Local Data to Cloud...');
+};
+
+$('#triggerLogoUpload').onclick = ()=> $('#logoFileInput').click();
+$('#logoFileInput').onchange = e =>{
+ const file = e.target.files[0];
+ if(!file) return;
+ const reader = new FileReader();
+ reader.onload = ev =>{
+   CFG.logo = ev.target.result;
+   saveLocal(); renderAll(); toast('Custom Logo Uploaded!');
+ };
+ reader.readAsDataURL(file);
+};
+$('#removeLogoBtn').onclick = ()=>{
+ CFG.logo = ''; saveLocal(); renderAll(); toast('Custom Logo Removed!');
+};
+
+function renderAdminCalcItems(){
+ const wrap = $('#adminCalcItemsList');
+ wrap.innerHTML = calcItems.map((it, idx)=>`
+   <div class="edit-item-row">
+     <div style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+       ${it.img ? `<img src="${it.img}" style="width:30px;height:30px;object-fit:contain;border-radius:4px">` : '💎'}
+       <input class="field" style="flex:1" value="${it.name}" onchange="calcItems[${idx}].name=this.value">
+       <input class="field" type="number" style="width:90px" value="${it.gem}" onchange="calcItems[${idx}].gem=+this.value">
+     </div>
+     <div style="display:flex;gap:6px;align-items:center">
+       <select class="field" style="width:130px" onchange="calcItems[${idx}].cat=this.value">
+         ${CALC_CATS.map(c=>`<option value="${c.id}" ${c.id===it.cat?'selected':''}>${c.name}</option>`).join('')}
+       </select>
+       <input type="file" id="calcImg_${idx}" accept="image/*" style="display:none" onchange="uploadCalcImg(${idx}, this)">
+       <button class="btn o" style="padding:6px 10px;font-size:.78rem" onclick="$('#calcImg_${idx}').click()">Upload Icon</button>
+       <button class="btn o danger" style="padding:6px 10px;font-size:.78rem" onclick="calcItems.splice(${idx},1);saveLocal();renderAll();renderAdminCalcItems()">Delete</button>
+     </div>
+   </div>
+ `).join('');
+}
+
+window.uploadCalcImg = (idx, input)=>{
+ const file = input.files[0];
+ if(!file) return;
+ const reader = new FileReader();
+ reader.onload = ev =>{
+   calcItems[idx].img = ev.target.result;
+   saveLocal(); renderAll(); renderAdminCalcItems(); toast('Icon Uploaded!');
+ };
+ reader.readAsDataURL(file);
+};
+
+$('#addCalcItemBtn').onclick = ()=>{
+ calcItems.push({id:'c_'+Date.now(), cat:'speed', name:'New Speedup Item', gem:1000, img:''});
+ saveLocal(); renderAll(); renderAdminCalcItems();
+};
+
+$('#saveCalcRateBtn').onclick = ()=>{
+ calcRate = parseFloat($('#edGemCalcRate').value) || 4.00;
+ saveLocal(); renderAll(); toast('Gem Rate Saved!');
+};
+
+function renderAdminGems(){
+ $('#adminGemsList').innerHTML = GEMS.map((g, idx)=>`
+   <div class="edit-item-row" style="display:flex;gap:8px;align-items:center">
+     <input class="field" value="${g[0]}" onchange="GEMS[${idx}][0]=this.value">
+     <input class="field" type="number" step="0.1" style="width:90px" value="${g[1]}" onchange="GEMS[${idx}][1]=+this.value">
+     <button class="btn o danger" style="padding:6px 10px;font-size:.78rem" onclick="GEMS.splice(${idx},1);saveLocal();renderAll();renderAdminGems()">✕</button>
+   </div>
+ `).join('');
+}
+$('#addGemTierBtn').onclick = ()=>{ GEMS.push(['New Might Bracket', 5.00]); saveLocal(); renderAll(); renderAdminGems(); };
+
+function renderAdminRes(){
+ $('#adminResList').innerHTML = RES.map((r, idx)=>`
+   <div class="edit-item-row">
+     <div style="display:grid;grid-template-columns:1fr 90px;gap:6px;margin-bottom:6px">
+       <input class="field" value="${r[0]}" onchange="RES[${idx}][0]=this.value">
+       <input class="field" type="number" step="0.1" value="${r[2]}" onchange="RES[${idx}][2]=+this.value">
+     </div>
+     <div style="display:flex;gap:6px">
+       <input class="field" value="${r[1]}" onchange="RES[${idx}][1]=this.value" placeholder="Description">
+       <button class="btn o danger" style="padding:6px 10px;font-size:.78rem" onclick="RES.splice(${idx},1);saveLocal();renderAdminRes()">✕</button>
+     </div>
+   </div>
+ `).join('');
+}
+$('#addResBtn').onclick = ()=>{ RES.push(['New Resource Pack', 'Pack details', 1.00, 'Offer']); saveLocal(); renderAll(); renderAdminRes(); };
+
+function renderAdminBots(){
+ $('#adminBotList').innerHTML = BOTS.map((b, idx)=>`
+   <div class="edit-item-row">
+     <div style="display:grid;grid-template-columns:1fr 90px;gap:6px;margin-bottom:6px">
+       <input class="field" value="${b[0]}" onchange="BOTS[${idx}][0]=this.value">
+       <input class="field" type="number" step="0.1" value="${b[2]}" onchange="BOTS[${idx}][2]=+this.value">
+     </div>
+     <div style="display:flex;gap:6px">
+       <input class="field" value="${b[1]}" onchange="BOTS[${idx}][1]=this.value" placeholder="Description">
+       <button class="btn o danger" style="padding:6px 10px;font-size:.78rem" onclick="BOTS.splice(${idx},1);saveLocal();renderAdminBots()">✕</button>
+     </div>
+   </div>
+ `).join('');
+}
+$('#addBotBtn').onclick = ()=>{ BOTS.push(['New Bot Service', 'Automated service plan', 10]); saveLocal(); renderAll(); renderAdminBots(); };
+
+function renderAdminCust(){
+ $('#adminCustList').innerHTML = CUST.map((c, ci)=>`
+   <div class="edit-item-row">
+     <div style="display:grid;grid-template-columns:50px 1fr;gap:6px;margin-bottom:6px">
+       <input class="field" value="${c.icon||'✨'}" onchange="CUST[${ci}].icon=this.value">
+       <input class="field" value="${c.title}" onchange="CUST[${ci}].title=this.value">
+     </div>
+     <button class="btn o danger w" style="margin-top:4px" onclick="CUST.splice(${ci},1);saveLocal();renderAll();renderAdminCust()">Delete Category</button>
+   </div>
+ `).join('');
+}
+$('#addCustSecBtn').onclick = ()=>{
+ CUST.push({title:'Accounts Marketplace', sub:'Verified accounts for sale', icon:'👑', items:[{title:'Starter Account', desc:'C25 Starter', price:50}]});
+ saveLocal(); renderAll(); renderAdminCust();
+};
+
+$('#savePayBtn').onclick = ()=>{
+ CFG.name = $('#edName').value.trim(); CFG.upi = $('#edUpi').value.trim(); CFG.upiName = $('#edUpiName').value.trim();
+ CFG.binanceId = $('#edBn').value.trim(); CFG.usdt = $('#edUsdt').value.trim();
+ CFG.whatsapp = $('#edWa').value.replace(/[^0-9]/g,''); CFG.telegram = $('#edTg').value.replace('@','').trim();
+ CFG.discordUrl = $('#edDc').value.trim(); CFG.remitlyName = $('#edRmName').value.trim(); CFG.remitlyDetails = $('#edRmDet').value.trim();
+ saveLocal(); renderAll(); toast('Store Details Saved!');
+};
+
+const th=$('#theme');
+function setTheme(t){
+ document.documentElement.dataset.theme=t;
+ th.textContent=t==='day'?'☀️':'🌙';
+ document.querySelector('meta[name=theme-color]').content = t==='day'?'#fbf7ec':'#07080c';
+ try{localStorage.setItem('rlm-theme',t)}catch(e){}
+}
+th.onclick=()=>setTheme(document.documentElement.dataset.theme==='day'?'night':'day');
+setTheme(document.documentElement.dataset.theme);
+
+renderAll();
+fetchFromCloud();
+</script>
+</body>
+</html>
